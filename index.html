@@ -15,16 +15,33 @@
       line-height: 1.6;
     }
     .container {
-      max-width: 720px;
+      max-width: 760px;
       margin: 0 auto;
-      padding: 32px 20px;
+      padding: 24px 20px 40px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding-bottom: 18px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid #e5e0d8;
+    }
+    nav a {
+      color: #2c2c2c;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    nav a:hover {
+      color: #8a5a36;
     }
     header {
       text-align: center;
       margin-bottom: 24px;
     }
     h1 {
-      font-size: 28px;
+      font-size: 30px;
       margin-bottom: 8px;
       color: #1f1f1f;
     }
@@ -45,8 +62,8 @@
     .card {
       background: #ffffff;
       border-radius: 14px;
-      padding: 24px;
-      margin-bottom: 20px;
+      padding: 26px;
+      margin-bottom: 22px;
       box-shadow: 0 4px 14px rgba(0,0,0,0.05);
     }
     .tag {
@@ -61,7 +78,7 @@
     }
     .card h2 {
       margin: 0 0 10px 0;
-      font-size: 20px;
+      font-size: 21px;
     }
     .card p {
       margin: 0 0 18px 0;
@@ -81,23 +98,37 @@
     .btn:hover {
       background-color: #4a4a4a;
     }
+    .ad-slot {
+      margin: 24px 0;
+      text-align: center;
+    }
     footer {
       text-align: center;
-      margin-top: 40px;
-      padding-top: 20px;
+      margin-top: 44px;
+      padding-top: 22px;
       border-top: 1px solid #e5e0d8;
       font-size: 13px;
       color: #777;
     }
     footer a {
       color: #555;
-      margin: 0 10px;
+      margin: 0 8px;
       text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="disclosure.html">Disclosure</a>
+    </nav>
+
     <header>
       <h1>Smart & Cozy Home</h1>
       <p class="subtitle">Curated Home Organization, Clever Gadgets & Honest Reviews</p>
@@ -107,25 +138,34 @@
       <strong>Disclosure:</strong> This site contains affiliate links. As an Amazon Associate and brand partner, I may earn a small commission from qualifying purchases at no extra cost to you.
     </div>
 
+    <!-- AD SLOT 1: Сюда позже вставим код верхнего баннера Google AdSense -->
+    <div class="ad-slot"></div>
+
     <div class="card">
       <span class="tag">Home Renovation & Plumbing</span>
       <h2>SNFLEX 600W Macerating Toilet System Review</h2>
       <p>How to add a full bathroom in your basement, garage, or attic without breaking concrete or spending thousands on underground plumbing.</p>
-      <a href="https://canva.site" class="btn">Read Full Review &rarr;</a>
+      <a href="snflex-review.html" class="btn">Read Full Review &rarr;</a>
     </div>
+
+    <!-- AD SLOT 2: Сюда позже вставим код баннера между статьями -->
+    <div class="ad-slot"></div>
 
     <div class="card">
       <span class="tag">Skincare & Beauty</span>
       <h2>Anua PDRN Collagen Cream & Capsule Mist Guide</h2>
       <p>A closer look at why sensitive and dry skin lovers are switching to this lightweight Korean glass-skin hydration duo.</p>
-      <a href="https://canva.site" class="btn">Read Full Review &rarr;</a>
+      <a href="anua-review.html" class="btn">Read Full Review &rarr;</a>
     </div>
 
     <footer>
       <p>&copy; 2026 Smart & Cozy Home. All rights reserved.</p>
       <p>
-        <a href="#privacy">Privacy Policy</a> | 
-        <a href="#disclosure">Affiliate Disclosure</a>
+        <a href="index.html">Home</a> | 
+        <a href="about.html">About</a> | 
+        <a href="contact.html">Contact</a> | 
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="disclosure.html">Affiliate Disclosure</a>
       </p>
     </footer>
   </div>
